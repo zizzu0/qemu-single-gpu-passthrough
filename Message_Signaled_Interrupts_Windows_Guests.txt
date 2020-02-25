@@ -7,3 +7,7 @@ Open regedit and browse hklm\system\CurrentControlSet\Enum\PCI
 PCI Devices with MSI support have the key Interrupt Management/MessageSignaledInterruptProperties
 
 Set MSISupported to 1.
+
+On the linux host create a file in /etc/modprobe.d/your_kernel_module.conf, in my case it is snd_hda_intel.conf
+
+options snd_hda_intel enable_msi = 1
