@@ -1,0 +1,9 @@
+Remove demonic audio on Windows Guests:
+
+As from https://github.com/CHEF-KOCH/MSI-utility
+
+Open regedit and browse hklm\system\CurrentControlSet\Enum\PCI
+
+PCI Devices with MSI support have the key Interrupt Management/MessageSignaledInterruptProperties
+
+Set MSISupported to 1.
